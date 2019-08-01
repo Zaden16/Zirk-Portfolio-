@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <title>ZA | Portfolio Website</title>
+  <script src="https://kit.fontawesome.com/67917c5b6d.js"></script>  
+  
+  </head>
+</head>
+<body id="home">
+  <!-- Navigation Bar -->
+  <nav id="navbar">
+    <a href="#home"><h1 class="logo">
+      <span class="text-primary">
+        <i class="fas fa-laptop-code"></i> ZA
+      </span> Web Development
+    </h1></a>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#who">About Me</a></li>
+      <li><a href="#section-b">Skillset/Projects</a></li>
+      <li><a href="#contact">Contact Me</a></li>
+    </ul>  
+  </nav>
+  
+  <!-- Header Showcase/Hero -->
+  <header id="showcase">
+    <div class="showcase-content">
+      <!-- Make GRID OR JS TypeWriter animation -->
+      <h1 class="l-heading">Zirk Adendorff</h1>
+      <p class="lead">Aspiring Web Developer</p>      
+    </div>
+  </header>
+  
+  <section id="who">
+    <div class="about-text bg-dark p-2">
+      <h2 class="m-heading"><span class="text-primary">Who</span> I am</h2>
+      <p>I am passionate about web development. I am ambitious, driven, highly organized, team player and results-oriented. I would describe myself as Able, I am able to handle multiple tasks on a daily basis. Dependable, I am a dependable person who is great at time management. Energetic, eager to learn new skills. Hardworking and Honest.</p>
+      <h3>Interests</h3>
+      <ul class="list">
+        <li>Web Development</li>
+        <li>crypto</li>
+        <li>Self improvement:</li>
+        <li>Learning new things</li>
+      </ul>
+    </div>
+    <div class="who-img"></div>
+  </section>
+
+  <!-- <section id="" class="py-1">
+    <div class="container">
+      <h2 class="m-heading text-center">Skillset / Projects</h2>
+      <div class="items py-1">        
+      </div>
+    </div>
+  </section> -->
+  <!-- <section id="section-a" class="grid">
+      <div class="contect-wrap">
+        <h2 class="content-title">Web Development</h2>
+        <div class="content-text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis illo aliquid neque autem deleniti dolorem nisi vitae, saepe placeat iure distinctio amet architecto, cupiditate necessitatibus.</p>
+        </div>
+      </div>
+    </section> -->
+    <!-- Section B -->
+    <section id="section-b" class="grid" >
+
+      <div class="container"><h2 class="m-heading text-center">Skillset / Projects</h2></div>
+      <br>
+      <ul>
+          <li>
+              <div class="card">
+                <img src="img/Data1.jpg" alt="Data-analysis">
+                <div class="card-content">
+                  <h3 class="card-title">Data Analyses</h3>
+                  <p>Clean and manipulate data and create visual representations of set data.</p>
+                  <a href="https://app.powerbi.com/groups/me/reports/9c5ab01d-2caa-404b-a8fa-e33ceb8de820?ctid=d865cb63-0a1e-4087-be17-d25250d9f412" target="_blank"><a href="about" class="btn py-1">Project</a></a>
+               </div>
+              
+             </div>
+        </li>
+        <li>
+          <div class="card">
+            <img src="img/webdev.png" alt="Web-development">
+            <div class="card-content">
+              <h3 class="card-title">Web Development</h3>
+              <p>Create Websites and landing pages using the current latest technologies HTML5, CSS3, JavaScript. Developing responsive designs to fit any screen.</p>
+            </div>
+          
+          </div>
+        </li>
+        <li>
+            <div class="card">
+              <img src="img/Web design.jpg" alt="Web-design">
+              <div class="card-content">
+                <h3 class="card-title">Web Design</h3>
+                <p>Create UI / UX designs, users are able to easily interact with the content on the page.</p>
+              </div>
+            
+            </div>
+        </li>        
+      </ul>
+    </section>
+    
+  <!-- Section -->
+  
+  <!-- Section: Contact -->
+  <section id="contact">
+    <div class="contact-form bg-primary p-2">
+      <h2 class="m-heading">Use the form below to contact me</h2>
+      <form id="contactForm" method="post" action="?" onsubmit="return recaptcha_callback()">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" placeholder="Enter Name and Surname" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" placeholder="Enter Email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" name="phone" id="phone" placeholder="Enter Phone number">
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea name="message" id="message" cols="20" rows="5" placeholder="Enter message"></textarea>
+        </div>
+        <div class="form-group">
+        <div id="recaptcha" class="g-recaptcha" data-sitekey="6Le0Q7AUAAAAAPSyiaOZVPAAHVq8fLKxb0ZinPaj"></div>
+        </div>
+        <input type="submit" id="submit" class="btn btn-dark" >
+        
+      </form>
+    </div>
+    <!-- <div class="map p-2" style="width: 100%; height: 75vh">
+      
+    </div> -->
+  </section>
+  <section id="home">
+  <div class="mybutton">
+      <a href="#home" class="home-btn"><i class="fas fa-arrow-up fa-1x"></i></a>
+  </div>
+  </section>
+
+  <footer id="main-footer" class="bg-dark text-center py-1">
+    <p><a href="https://github.com/Zaden16/Zirk-Portfolio-.git" target="_blank"<i class="fab fa-github-square fa-3x"></i></a></p>
+    <p>Copyright &copy; 2019</p>
+  </footer>
+  <!-- Google Maps API Key:AIzaSyCGaSBIO8AbEObLW4fAgeeSUEONEMtviks -->
+
+    
+  <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-database.js"></script>
+  <script src="main.js"></script>
+  <script src="index.js"></script>
+
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGaSBIO8AbEObLW4fAgeeSUEONEMtviks&callback=initMap"
+  async defer></script> -->
+
+  <!-- Google maps 31 lower long <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.911100275476!2d18.422481715493234!3d-33.917687529029855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc676055f3ce6b%3A0xc3fda2104679e043!2s31+Lower+Long+St%2C+Cape+Town+City+Centre%2C+Cape+Town%2C+8000!5e0!3m2!1sen!2sza!4v1563791283392!5m2!1sen!2sza" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+</body>
+</html>
